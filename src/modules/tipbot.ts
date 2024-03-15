@@ -307,7 +307,7 @@ ${tx}${msgtail}`;
   });
 }
 function getAddress(userId, cb) {
-  hemis.getAddressesByAccount(userId, function(err, addresses) {
+  hemis.getAddressesByLabel(userId, function(err, addresses) {
     if (err) {
       cb(err);
     } else if (addresses.length > 0) {
