@@ -23,11 +23,11 @@
     "prettier": "^2.1.2",
     "typescript": "latest"
   },
-  "name": "lbry-tipbot",
-  "version": "0.0.5",
-  "description": "LBRYs tipbot for Discord",
+  "name": "hms-tipbot",
+  "version": "1.0.0",
+  "description": "HEMIS tipbot for Discord",
   "main": "dist/bot.js",
-  "repository": "https://github.com/lbryio/lbry-tipbot",
-  "author": "filipnyquist <filip@lbry.com>",
+  "repository": "https://github.com/hypermoist/hms-tipbot",
+  "author": "hypermoist <hemis@hypurrr.app>",
   "license": "MIT"
 }

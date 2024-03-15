@@ -1,6 +1,6 @@
 export interface Config {
   bot: BotConfig;
-  lbrycrd: LBRYCrdConfig;
+  hemisd: HemisdConfig;
   sandboxchannel: string;
 }
 
@@ -11,7 +11,7 @@ export interface BotConfig {
   intents: string[];
 }
 
-export interface LBRYCrdConfig {
+export interface HemisdConfig {
   port: number;
   user: string;
   pass: string;

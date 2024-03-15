@@ -13,10 +13,10 @@
       "directMessageReactions"
     ]
   },
-  "lbrycrd": {
-    "port": 9245,
-    "user": "lbry",
-    "pass": "lbry"
+  "hemisd": {
+    "port": 49165,
+    "user": "hemis",
+    "pass": "hemis"
   },
-  "sandboxchannel": "#369896313082478594"
+  "sandboxchannel": "#000000000000000000"
 }

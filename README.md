@@ -1,8 +1,8 @@
-# Bot for [LBRY's Discord](https://chat.lbry.com)
+# Bot for [Hemis's Discord](https://discord.gg/Gfc5mcwTkM)
 (This README will be updated along with bot updates)
 Features:
 
-- Tipbot for LBC. Responds to `!tip`.
+- Tipbot for HMS. Responds to `!tip`.
 - Dynamic plugin loading with permission support.
 
 
@@ -12,7 +12,7 @@ Features:
 - node > 12.0.x
 - yarn
 - node-typescript
-- LBRYCrd 0.17.x (https://github.com/lbryio/lbrycrd/)
+- Hemisd 1.1.x (https://github.com/Hemis-Blockchain/Hemis)
 
 ## Install the prerequisites
 ### NodeJS & Typescript
@@ -27,45 +27,47 @@ sudo apt install nodejs-typescript
 ```
 sudo npm install -g yarn
 ```
-### Download LBRYCRD
-Download the latest 0.17 release of LBRYcrd from the [Github](https://github.com/lbryio/lbrycrd/releases)
+### Download HEMISD
+Download the latest 1.1.1 release of Hemisd from the [Github](https://github.com/Hemis-Blockchain/Hemis/releases)
 
 ## Installation
 
-Install LBRYCrd
+Install Hemisd
 ```
-$ unzip ~/lbrycrd-linux.zip
+$ unzip ~/Hemis-linux.zip
 ```
-Follow the instructions on the LBRYCrds GitHub Repository to create a lbrycrd.conf and remember the username and password.
-
-Start LBRYCrd 
+Create a Hemis.conf with rpc info
 ```
-./lbrycrdd -server -daemon
+rpcuser=username
+rpcpassword=password
+daemon=1
+server=1
 ```
+Start Hemisd
 
 Create a bot and get the bot's API Token: https://discordapp.com/developers/applications/me - ![](https://i.imgur.com/gM8EpJe.png)
 
 Make sure the bot has "bot" flags in OAuth2
 
 ```
-$ cd lbry-tipbot/config
+$ cd hms-tipbot/config
 ```
 Then
 ```
-$ vim default.json.example
+$ nano default.json.example
 ```
-Input your bot's token, the channel ID for your bot command channel, and the username & password for LBRYCrd
+Input your bot's token, the channel ID for your bot command channel, and the username & password for Hemisd
 .  Then, Rename the configuration file to "default.json" with
 
 ```
 $ mv default.json.example default.json
 ```
 
-Then run yarn install from within lbry-tipbot directory
+Then run yarn install from within hms-tipbot directory
 ```
 yarn install
 yarn start
 ```
 
 ## License
-[MIT](https://github.com/lbryio/lbry-tipbot/blob/master/LICENSE)
+[MIT](https://github.com/hypermoist/hms-tipbot/blob/master/LICENSE)
